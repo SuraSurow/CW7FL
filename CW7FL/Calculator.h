@@ -8,6 +8,7 @@
 #pragma once
 #include <list>
 #include <string>
+#include <unordered_set>
 #include <variant>
 #include <vector>
 

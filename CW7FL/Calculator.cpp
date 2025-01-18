@@ -18,12 +18,14 @@ void Calculator::parser() {
     if (base_system == "DEC") {num_sym = dec_symb;}
     if (base_system == "OCT") {num_sym = oct_symb;}
     if (base_system == "BIN") {num_sym = bin_symb;}
+    std::unordered_set<std::string> num_sym_set(num_sym.begin(), num_sym.end());
+    std::unordered_set<std::string> opr_sym_pair(operation_symb.begin(), operation_symb.end());
     for (char c : this->init) {
         std::string temp_number;
-        if (std::find(num_sym.begin(), num_sym.end(), c) != num_sym.end()) {
+        if (num_sym_set.contains(&c)) {
             temp_number += c;
         }
-        if (std::find(operation_symb.begin(), operation_symb.end(), c) != operation_symb.end()) {
+        if (opr_sym_pair.contains(&c)) {
             this->tokenize.push_back(temp_number);
             temp_number = "";
             temp_number += c;
@@ -77,7 +79,7 @@ void Calculator::calculate(std::string math_operator) {
             result_int /= current;
         }
     }
-
+    //add recrsion here
     return_result();
 }
 

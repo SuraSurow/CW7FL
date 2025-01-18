@@ -23,7 +23,7 @@ testing::AssertionResult IsEven(int n) {
 
 
 class Tests {
-    test_addition
+
 
 
 
