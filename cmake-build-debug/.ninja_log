@@ -1,0 +1,26 @@
+# ninja log v6
+3880	4385	1737224623930984427	TestRunner/TestRunner_autogen/timestamp	9045221f16ff78ed
+8111	8523	1737224627664265288	TestRunner/TestRunner	22d9ad6c5d74c97a
+3880	4385	1737224623930984427	/home/bolo/CLionProjects/CW7FL/cmake-build-debug/TestRunner/TestRunner_autogen/mocs_compilation.cpp	9045221f16ff78ed
+34	2345	1737224646594001496	CW7FL/CMakeFiles/AppRunner.dir/main.cpp.o	6aa3831c310d02fb
+578	3524	1737224620131037993	CW7FL/CMakeFiles/CW7FL.dir/mainwindow.cpp.o	8b132915673aad32
+3880	4385	1737224623930984427	/home/bolo/CLionProjects/CW7FL/cmake-build-debug/TestRunner/TestRunner_autogen/timestamp	9045221f16ff78ed
+3880	4385	1737224623930984427	TestRunner/TestRunner_autogen/mocs_compilation.cpp	9045221f16ff78ed
+2	574	1737224620117704847	/home/bolo/CLionProjects/CW7FL/cmake-build-debug/CW7FL/CW7FL_autogen/mocs_compilation.cpp	c36685a0daea3ee4
+4386	7909	1737224623937651001	TestRunner/CMakeFiles/TestRunner.dir/mainwindow.cpp.o	542a4e3c7e24f284
+3524	3880	1737224623074329823	CW7FL/libCW7FL.so	cb65c24fc47166f0
+577	3274	1737224620127704707	CW7FL/CMakeFiles/CW7FL.dir/CW7FL_autogen/mocs_compilation.cpp.o	6bb6a68e0533cd96
+34	54	1737224646594001496	CW7FL/CMakeFiles/AppRunner.dir/AppRunner_autogen/mocs_compilation.cpp.o	7df7db70e0f8f545
+7	34	1737224646587334922	/home/bolo/CLionProjects/CW7FL/cmake-build-debug/CW7FL/AppRunner_autogen/mocs_compilation.cpp	4ebf697c65e06311
+4386	8111	1737224623937651001	TestRunner/CMakeFiles/TestRunner.dir/main.cpp.o	1b53c5bfce25bc7b
+4386	7643	1737224623937651001	TestRunner/CMakeFiles/TestRunner.dir/TestRunner_autogen/mocs_compilation.cpp.o	7fe04bf89e33b1c6
+7	34	1737224646587334922	CW7FL/AppRunner_autogen/mocs_compilation.cpp	4ebf697c65e06311
+2	574	1737224620117704847	CW7FL/CW7FL_autogen/mocs_compilation.cpp	c36685a0daea3ee4
+2345	2668	1737224648903969562	CW7FL/AppRunner	b7e9e38f81de865f
+7	34	1737224646587334922	/home/bolo/CLionProjects/CW7FL/cmake-build-debug/CW7FL/AppRunner_autogen/timestamp	4ebf697c65e06311
+2	574	1737224620117704847	CW7FL/CW7FL_autogen/timestamp	c36685a0daea3ee4
+2	574	1737224620117704847	/home/bolo/CLionProjects/CW7FL/cmake-build-debug/CW7FL/CW7FL_autogen/timestamp	c36685a0daea3ee4
+7	34	1737224646587334922	CW7FL/AppRunner_autogen/timestamp	4ebf697c65e06311
+6	1156	1737224769325708591	Test/CMakeFiles/Tests.dir/main.cpp.o	cdf12cd3efac1f7e
+6	1567	1737224769325708591	Test/CMakeFiles/Tests.dir/tst_inittest.cpp.o	aafaa5725504dc81
+1567	1825	1737224770885688774	Test/Tests	4d124e16ef99357f

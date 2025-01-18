@@ -1,0 +1,224 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "CW7FL",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-CW7FL-Debug-a868e3d9496afe615321.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "CW7FL",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "Test",
+					"jsonFile" : "directory-Test-Debug-3fc60f65c6de5401f5db.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Test",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "TestRunner",
+					"jsonFile" : "directory-TestRunner-Debug-9da4c3b83937752fa96c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "TestRunner",
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CalcWIN7forLinux"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "CW7FL",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Tests",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "TestRunner",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "AppRunner::@3c7e9115696d5a5e614c",
+					"jsonFile" : "target-AppRunner-Debug-ab67410f708023efc43e.json",
+					"name" : "AppRunner",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "AppRunner_autogen::@3c7e9115696d5a5e614c",
+					"jsonFile" : "target-AppRunner_autogen-Debug-08e97e5dca53a657f1a3.json",
+					"name" : "AppRunner_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "AppRunner_autogen_timestamp_deps::@3c7e9115696d5a5e614c",
+					"jsonFile" : "target-AppRunner_autogen_timestamp_deps-Debug-aa109c7b35ebf1cf4fa3.json",
+					"name" : "AppRunner_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "CW7FL::@3c7e9115696d5a5e614c",
+					"jsonFile" : "target-CW7FL-Debug-df3ca5405be969719dcc.json",
+					"name" : "CW7FL",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "CW7FL_autogen::@3c7e9115696d5a5e614c",
+					"jsonFile" : "target-CW7FL_autogen-Debug-93fb6d240f9aa4af0ae9.json",
+					"name" : "CW7FL_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "CW7FL_autogen_timestamp_deps::@3c7e9115696d5a5e614c",
+					"jsonFile" : "target-CW7FL_autogen_timestamp_deps-Debug-c8a3316ae676b2710019.json",
+					"name" : "CW7FL_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "TestRunner::@3bb32e16a230f2607a0f",
+					"jsonFile" : "target-TestRunner-Debug-2294fe9f737117d741d9.json",
+					"name" : "TestRunner",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "TestRunner_autogen::@3bb32e16a230f2607a0f",
+					"jsonFile" : "target-TestRunner_autogen-Debug-11871cbafe2381b60ce2.json",
+					"name" : "TestRunner_autogen",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "TestRunner_autogen_timestamp_deps::@3bb32e16a230f2607a0f",
+					"jsonFile" : "target-TestRunner_autogen_timestamp_deps-Debug-c3190a769d90346dcc14.json",
+					"name" : "TestRunner_autogen_timestamp_deps",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Tests::@c0a5cca43b8aa79eb50e",
+					"jsonFile" : "target-Tests-Debug-51f915c9375230a34083.json",
+					"name" : "Tests",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/bolo/CLionProjects/CW7FL/cmake-build-debug",
+		"source" : "/home/bolo/CLionProjects/CW7FL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
