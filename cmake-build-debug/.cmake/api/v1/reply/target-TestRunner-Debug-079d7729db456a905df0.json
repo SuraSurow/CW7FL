@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CW7FL/libCW7FL.so"
+			"path" : "TestRunner/TestRunner"
 		}
 	],
 	"backtrace" : 1,
@@ -10,8 +10,7 @@
 	{
 		"commands" : 
 		[
-			"add_library",
-			"install",
+			"add_executable",
 			"target_link_libraries",
 			"set_target_properties",
 			"include",
@@ -19,18 +18,17 @@
 			"set_property",
 			"find_dependency",
 			"_qt_internal_find_third_party_dependencies",
-			"_qt_internal_find_qt_dependencies",
-			"target_include_directories"
+			"_qt_internal_find_qt_dependencies"
 		],
 		"files" : 
 		[
-			"CW7FL/CMakeLists.txt",
+			"TestRunner/CMakeLists.txt",
 			"/usr/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
 			"/usr/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
 			"/usr/lib/cmake/Qt6/Qt6Config.cmake",
-			"/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindOpenGL.cmake",
+			"/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindOpenGL.cmake",
 			"/usr/lib/cmake/Qt6/FindWrapOpenGL.cmake",
-			"/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+			"/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
 			"/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
 			"/usr/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake",
 			"/usr/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
@@ -44,148 +42,136 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 21,
+				"line" : 23,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 42,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
 				"line" : 26,
 				"parent" : 0
 			},
 			{
-				"command" : 5,
+				"command" : 4,
 				"file" : 0,
 				"line" : 12,
 				"parent" : 0
 			},
 			{
 				"file" : 3,
-				"parent" : 4
-			},
-			{
-				"command" : 5,
-				"file" : 3,
-				"line" : 191,
-				"parent" : 5
-			},
-			{
-				"file" : 2,
-				"parent" : 6
+				"parent" : 3
 			},
 			{
 				"command" : 4,
+				"file" : 3,
+				"line" : 191,
+				"parent" : 4
+			},
+			{
+				"file" : 2,
+				"parent" : 5
+			},
+			{
+				"command" : 3,
 				"file" : 2,
 				"line" : 65,
-				"parent" : 7
+				"parent" : 6
 			},
 			{
 				"file" : 1,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 70,
 				"parent" : 8
 			},
 			{
 				"command" : 3,
-				"file" : 1,
-				"line" : 70,
-				"parent" : 9
-			},
-			{
-				"command" : 4,
 				"file" : 2,
 				"line" : 53,
-				"parent" : 7
+				"parent" : 6
 			},
 			{
 				"file" : 10,
-				"parent" : 11
-			},
-			{
-				"command" : 9,
-				"file" : 10,
-				"line" : 43,
-				"parent" : 12
-			},
-			{
-				"command" : 7,
-				"file" : 7,
-				"line" : 143,
-				"parent" : 13
-			},
-			{
-				"command" : 5,
-				"file" : 6,
-				"line" : 76,
-				"parent" : 14
-			},
-			{
-				"file" : 9,
-				"parent" : 15
-			},
-			{
-				"command" : 4,
-				"file" : 9,
-				"line" : 53,
-				"parent" : 16
-			},
-			{
-				"file" : 8,
-				"parent" : 17
+				"parent" : 10
 			},
 			{
 				"command" : 8,
-				"file" : 8,
-				"line" : 37,
-				"parent" : 18
-			},
-			{
-				"command" : 7,
-				"file" : 7,
-				"line" : 36,
-				"parent" : 19
-			},
-			{
-				"command" : 5,
-				"file" : 6,
-				"line" : 76,
-				"parent" : 20
-			},
-			{
-				"file" : 5,
-				"parent" : 21
-			},
-			{
-				"command" : 5,
-				"file" : 5,
-				"line" : 13,
-				"parent" : 22
-			},
-			{
-				"file" : 4,
-				"parent" : 23
+				"file" : 10,
+				"line" : 43,
+				"parent" : 11
 			},
 			{
 				"command" : 6,
-				"file" : 4,
-				"line" : 712,
-				"parent" : 24
+				"file" : 7,
+				"line" : 143,
+				"parent" : 12
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 76,
+				"parent" : 13
+			},
+			{
+				"file" : 9,
+				"parent" : 14
 			},
 			{
 				"command" : 3,
-				"file" : 4,
-				"line" : 710,
-				"parent" : 24
+				"file" : 9,
+				"line" : 53,
+				"parent" : 15
 			},
 			{
-				"command" : 10,
-				"file" : 0,
-				"line" : 25,
-				"parent" : 0
+				"file" : 8,
+				"parent" : 16
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 37,
+				"parent" : 17
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 36,
+				"parent" : 18
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 76,
+				"parent" : 19
+			},
+			{
+				"file" : 5,
+				"parent" : 20
+			},
+			{
+				"command" : 4,
+				"file" : 5,
+				"line" : 13,
+				"parent" : 21
+			},
+			{
+				"file" : 4,
+				"parent" : 22
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 712,
+				"parent" : 23
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 710,
+				"parent" : 23
 			}
 		]
 	},
@@ -195,28 +181,25 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17 -fPIC -fdiagnostics-color=always"
+					"fragment" : "-g -std=gnu++17 -fdiagnostics-color=always"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"fragment" : "-mno-direct-extern-access"
 				}
 			],
 			"defines" : 
 			[
 				{
-					"define" : "CW7FL_EXPORTS"
-				},
-				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"define" : "QT_CORE_LIB"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"define" : "QT_GUI_LIB"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"define" : "QT_WIDGETS_LIB"
 				}
 			],
@@ -224,34 +207,34 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/home/bolo/CLionProjects/CW7FL/cmake-build-debug/CW7FL/CW7FL_autogen/include"
+					"path" : "/home/bolo/CLionProjects/CW7FL/cmake-build-debug/TestRunner/TestRunner_autogen/include"
 				},
 				{
-					"backtrace" : 27,
+					"backtrace" : 2,
 					"path" : "/home/bolo/CLionProjects/CW7FL/CW7FL"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "/usr/include/qt6/QtWidgets"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "/usr/include/qt6"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "/usr/include/qt6/QtCore"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "/usr/lib/qt6/mkspecs/linux-g++"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "/usr/include/qt6/QtGui"
 				}
@@ -261,89 +244,89 @@
 			{
 				"backtraces" : 
 				[
-					3,
-					3
+					2,
+					2
 				],
 				"standard" : "17"
 			},
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "CW7FL_autogen_timestamp_deps::@3c7e9115696d5a5e614c"
+			"backtrace" : 2,
+			"id" : "CW7FL::@3c7e9115696d5a5e614c"
+		},
+		{
+			"id" : "TestRunner_autogen_timestamp_deps::@3bb32e16a230f2607a0f"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "CW7FL_autogen::@3c7e9115696d5a5e614c"
+			"id" : "TestRunner_autogen::@3bb32e16a230f2607a0f"
 		}
 	],
-	"id" : "CW7FL::@3c7e9115696d5a5e614c",
-	"install" : 
-	{
-		"destinations" : 
-		[
-			{
-				"backtrace" : 2,
-				"path" : "lib"
-			},
-			{
-				"backtrace" : 2,
-				"path" : "lib"
-			}
-		],
-		"prefix" : 
-		{
-			"path" : "/usr/local"
-		}
-	},
+	"id" : "TestRunner::@3bb32e16a230f2607a0f",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
 				"fragment" : "",
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 3,
+				"fragment" : "-Wl,-rpath,/home/bolo/CLionProjects/CW7FL/cmake-build-debug/CW7FL",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "CW7FL/libCW7FL.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
 				"fragment" : "/usr/lib/libQt6Widgets.so.6.8.1",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 10,
+				"backtrace" : 9,
 				"fragment" : "/usr/lib/libQt6Gui.so.6.8.1",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 25,
+				"backtrace" : 24,
 				"fragment" : "/usr/lib/libGLX.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 26,
+				"backtrace" : 25,
 				"fragment" : "/usr/lib/libOpenGL.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 10,
+				"backtrace" : 9,
 				"fragment" : "/usr/lib/libQt6Core.so.6.8.1",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "CW7FL",
-	"nameOnDisk" : "libCW7FL.so",
+	"name" : "TestRunner",
+	"nameOnDisk" : "TestRunner",
 	"paths" : 
 	{
-		"build" : "CW7FL",
-		"source" : "CW7FL"
+		"build" : "TestRunner",
+		"source" : "TestRunner"
 	},
 	"sourceGroups" : 
 	[
@@ -352,19 +335,12 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		},
 		{
 			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				2,
-				4
-			]
-		},
-		{
-			"name" : "",
 			"sourceIndexes" : 
 			[
 				3,
@@ -372,10 +348,18 @@
 			]
 		},
 		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				4,
+				6
+			]
+		},
+		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				6
+				7
 			]
 		}
 	],
@@ -385,43 +369,49 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CW7FL/CW7FL_autogen/mocs_compilation.cpp",
+			"path" : "cmake-build-debug/TestRunner/TestRunner_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CW7FL/mainwindow.cpp",
+			"path" : "TestRunner/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "CW7FL/mainwindow.h",
+			"compileGroupIndex" : 0,
+			"path" : "TestRunner/mainwindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "TestRunner/mainwindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "CW7FL/mainwindow.ui",
+			"path" : "TestRunner/mainwindow.ui",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CW7FL/CW7FL_autogen/include/ui_mainwindow.h",
+			"path" : "cmake-build-debug/TestRunner/TestRunner_autogen/include/ui_mainwindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CW7FL/CW7FL_autogen/timestamp",
+			"path" : "cmake-build-debug/TestRunner/TestRunner_autogen/timestamp",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CW7FL/CW7FL_autogen/timestamp.rule",
+			"path" : "cmake-build-debug/TestRunner/TestRunner_autogen/timestamp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],
-	"type" : "SHARED_LIBRARY"
+	"type" : "EXECUTABLE"
 }

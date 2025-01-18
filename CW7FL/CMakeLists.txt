@@ -12,9 +12,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
-    mainwindow.cpp
-    mainwindow.h
-    mainwindow.ui
+        Calculator.cpp
+        Calculator.h
+        mainwindow.cpp
+        mainwindow.h
+        mainwindow.ui
 )
 
 # Tworzenie biblioteki
