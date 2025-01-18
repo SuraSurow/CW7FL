@@ -357,6 +357,14 @@ build Test/CMakeFiles/Tests.dir/Tests.cpp.o: CXX_COMPILER__Tests_unscanned_Debug
   OBJECT_DIR = Test/CMakeFiles/Tests.dir
   OBJECT_FILE_DIR = Test/CMakeFiles/Tests.dir
 
+build Test/CMakeFiles/Tests.dir/Cases/Addition/Addition.cpp.o: CXX_COMPILER__Tests_unscanned_Debug /home/bolo/CLionProjects/CW7FL/Test/Cases/Addition/Addition.cpp || cmake_object_order_depends_target_Tests
+  DEFINES = -DGTEST_LINKED_AS_SHARED_LIBRARY=1
+  DEP_FILE = Test/CMakeFiles/Tests.dir/Cases/Addition/Addition.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I/home/bolo/CLionProjects/CW7FL/CW7FL
+  OBJECT_DIR = Test/CMakeFiles/Tests.dir
+  OBJECT_FILE_DIR = Test/CMakeFiles/Tests.dir/Cases/Addition
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Tests
@@ -365,7 +373,7 @@ build Test/CMakeFiles/Tests.dir/Tests.cpp.o: CXX_COMPILER__Tests_unscanned_Debug
 #############################################
 # Link the executable Test/Tests
 
-build Test/Tests: CXX_EXECUTABLE_LINKER__Tests_Debug Test/CMakeFiles/Tests.dir/main.cpp.o Test/CMakeFiles/Tests.dir/Tests.cpp.o | CW7FL/libCW7FL.so /usr/lib/libgtest.so.1.15.2 || CW7FL/libCW7FL.so
+build Test/Tests: CXX_EXECUTABLE_LINKER__Tests_Debug Test/CMakeFiles/Tests.dir/main.cpp.o Test/CMakeFiles/Tests.dir/Tests.cpp.o Test/CMakeFiles/Tests.dir/Cases/Addition/Addition.cpp.o | CW7FL/libCW7FL.so /usr/lib/libgtest.so.1.15.2 || CW7FL/libCW7FL.so
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/home/bolo/CLionProjects/CW7FL/../CW7FL/build/Desktop_Qt_6_7_2-Debug:/home/bolo/CLionProjects/CW7FL/cmake-build-debug/CW7FL  CW7FL/libCW7FL.so  /usr/lib/libgtest.so.1.15.2
   LINK_PATH = -L/home/bolo/CLionProjects/CW7FL/../CW7FL/build/Desktop_Qt_6_7_2-Debug

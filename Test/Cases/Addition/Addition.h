@@ -1,25 +1,13 @@
-//
-// Created by bolo on 18.01.25.
-//
-
 #ifndef ADDITION_H
 #define ADDITION_H
-#include <gtest/gtest-assertion-result.h>
-using namespace ::testing
 
-struct Addition{
+#include <gtest/gtest.h>
+#include <string>
 
-    AssertionResult additionMinusNumberToMinusNumber();
-    AssertionResult additionMinusNumberToPlusNumber();
-    AssertionResult additionPlusNumberToPlusNumber();
-    AssertionResult additionZeroToMinusNumber();
-    AssertionResult additionZeroToPlusNumber();
-    AssertionResult additionZeroToZero();
+struct Addition {
+    Addition();
+    testing::AssertionResult performTest(const std::string& expression, const std::string& expectedResult);
+};
 
+#endif // ADDITION_H
 
- };
-
-
-
-
-#endif //ADDITION_H

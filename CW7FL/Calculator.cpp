@@ -9,7 +9,7 @@
 Calculator::Calculator(std::string init) : init(std::move(init)) {
 
 }
-
+/*
 void Calculator::parser() {
     std::list<std::string> hex_symb = {"0", "1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"};
     std::list<std::string> dec_symb = {"0","1","2","3","4","5","6","7","8","9"};
@@ -22,3 +22,4 @@ void Calculator::parser() {
         }
     }
 }
+*/

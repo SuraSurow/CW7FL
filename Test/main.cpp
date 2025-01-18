@@ -1,5 +1,7 @@
 
 #include <gtest/gtest.h>
+#include "Cases/Addition/Addition.h"
+
 
 int main(int argc, char *argv[])
 {
