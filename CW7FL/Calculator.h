@@ -12,6 +12,7 @@ class Calculator {
 public:
     explicit Calculator(std::string init);
     std::string init;
+    std::string result;
 };
 
 
