@@ -5,19 +5,19 @@
 using namespace testing;
 
 //OGOLNIE TO TESTY DZIALAJA !!! mozna uzywac
-TEST(CalculatorTest, Constructor) {
+TEST(CalculatorBackendTest, Constructor) {
     Calculator calc("54321");
     EXPECT_EQ("54321", calc.init);
 }
-TEST(CalculatorTest, Addition) {
+TEST(CalculatorBackendTest, Addition) {
     Calculator calc("1+1");
     EXPECT_EQ(2, calc.result);
 }
-TEST(CalculatorTest, Subtraction) {
+TEST(CalculatorBackendTest, Subtraction) {
     Calculator calc("1-1");
     EXPECT_EQ(0, calc.result);
 }
-TEST(CalculatorTest, Division) {
+TEST(CalculatorBackendTest, Division) {
     Calculator calc("8/2");
     EXPECT_EQ(4, calc.result);
 }
