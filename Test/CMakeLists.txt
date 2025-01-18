@@ -16,7 +16,8 @@ endif()
 link_directories(${CMAKE_SOURCE_DIR}/../CW7FL/build/Desktop_Qt_6_7_2-Debug)
 
 # Tworzenie pliku wykonywalnego dla testów
-add_executable(Tests main.cpp tst_inittest.cpp)
+add_executable(Tests main.cpp Tests.cpp
+        Cases/Addition/Addition.h)
 
 # Linkowanie z biblioteką CW7FL i Google Test
 target_link_libraries(Tests PRIVATE CW7FL GTest::GTest)

@@ -13,6 +13,9 @@ public:
     explicit Calculator(std::string init);
     std::string init;
     std::string result;
+    std::string base_system = "DEC";
+private:
+    void parser();
 };
 
 
