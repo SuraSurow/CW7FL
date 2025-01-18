@@ -43,7 +43,7 @@ void Calculator::parser() {
     }
 
 }
-
+// todo recursion!
 void Calculator::calculate(std::string math_operator) {
     // Pusta lista , lub tylko operator
     if (mixed_tokens.empty() ||
