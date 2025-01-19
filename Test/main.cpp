@@ -1,5 +1,8 @@
 
 #include <gtest/gtest.h>
+#include <gmock/gmock-matchers.h>
+#include "Cases/Addition/Addition.h"
+
 
 int main(int argc, char *argv[])
 {

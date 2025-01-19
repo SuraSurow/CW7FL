@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include <QProcess>
 #include <QMessageBox>
+#include "../Test/Tests.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
@@ -33,6 +34,7 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow() {}
 
 void MainWindow::runSelectedTest() {
+
     QListWidgetItem *currentItem = testListWidget->currentItem();
     if (!currentItem) {
         QMessageBox::warning(this, "Error", "No test selected!");

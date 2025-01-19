@@ -7,23 +7,20 @@ enable_testing()
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Znajdź Google Test
 find_package(GTest REQUIRED)
-if (NOT GTest_FOUND)
-    message(FATAL_ERROR "No GTest Found")
-endif()
 
-# Dodanie ścieżki do katalogu, w którym znajduje się biblioteka CW7FL
-link_directories(${CMAKE_SOURCE_DIR}/../CW7FL/build/Desktop_Qt_6_7_2-Debug)
+# Dodaj katalogi z nagłówkami
+include_directories(${CMAKE_SOURCE_DIR}/../CW7FL)
 
-# Tworzenie pliku wykonywalnego dla testów
-add_executable(Tests main.cpp tst_inittest.cpp)
+# Dodaj pliki źródłowe i nagłówkowe
+add_executable(Tests
+        main.cpp
+        Cases/Addition/Addition.cpp
+        /home/bolo/CLionProjects/CW7FL/CW7FL/Calculator.cpp
+)
 
-# Linkowanie z biblioteką CW7FL i Google Test
-target_link_libraries(Tests PRIVATE CW7FL GTest::GTest)
+# Linkuj z bibliotekami
+target_link_libraries(Tests PRIVATE GTest::GTest GTest::Main)
 
-# Ustawienie rpath, aby linker znalazł bibliotekę w czasie uruchamiania
-set_target_properties(Tests PROPERTIES INSTALL_RPATH ${CMAKE_SOURCE_DIR}/../CW7FL/build/Desktop_Qt_6_7_2-Debug)
-
-# Dodanie testu do frameworka testowego CTest
-add_test(NAME Tests COMMAND Tests)
 
