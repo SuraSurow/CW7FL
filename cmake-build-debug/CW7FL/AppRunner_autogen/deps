@@ -1,24 +1,24 @@
 AppRunner_autogen/timestamp: \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckIncludeFileCXX.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FeatureSummary.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindOpenGL.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPkgConfig.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindThreads.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindVulkan.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/GNUInstallDirs.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckFlagCommonConfig.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/MacroAddFileDependencies.cmake \
-	/home/bolo/CLionProjects/CW7FL/CW7FL/CMakeLists.txt \
-	/home/bolo/CLionProjects/CW7FL/CW7FL/main.cpp \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckIncludeFileCXX.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckLibraryExists.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FeatureSummary.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindOpenGL.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPkgConfig.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindThreads.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindVulkan.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/GNUInstallDirs.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckFlagCommonConfig.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake \
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/MacroAddFileDependencies.cmake \
+	/home/kkalisz/Development/CW7FL/CW7FL/CMakeLists.txt \
+	/home/kkalisz/Development/CW7FL/CW7FL/main.cpp \
 	/usr/lib/cmake/Qt6/3rdparty/kwin/FindXKB.cmake \
 	/usr/lib/cmake/Qt6/FindWrapAtomic.cmake \
 	/usr/lib/cmake/Qt6/FindWrapOpenGL.cmake \
@@ -282,4 +282,4 @@ AppRunner_autogen/timestamp: \
 	/usr/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake \
 	/usr/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
 	/usr/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
-	/home/bolo/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake
+	/home/kkalisz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake

@@ -17,7 +17,7 @@ include_directories(${CMAKE_SOURCE_DIR}/../CW7FL)
 add_executable(Tests
         main.cpp
         Cases/Addition/Addition.cpp
-        /home/bolo/CLionProjects/CW7FL/CW7FL/Calculator.cpp
+        ~/Development/CW7FL/CW7FL/Calculator.cpp
 )
 
 # Linkuj z bibliotekami
