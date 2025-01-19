@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include <QProcess>
 #include <QMessageBox>
-#include "../Test/Tests.h"
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
