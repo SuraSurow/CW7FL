@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include <QProcess>
 #include <QMessageBox>
+#include "TestLoader.h"
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -10,8 +11,16 @@ MainWindow::MainWindow(QWidget *parent)
     runAllButton(new QPushButton("Run All Tests", this)),
     resetButton(new QPushButton("Reset", this)) {
 
-    // Testy do wyświetlenia w liście
-    QStringList testFiles = {"InitTest", "AnotherTest", "ExampleTest"};
+    auto *testLoader = new TestLoader();
+
+    testLoader->scanNameFiles();
+    std::vector<std::string> nameFiles = testLoader->getNameFiles();
+
+    QStringList testFiles;
+    for (const auto& fileName : nameFiles) {
+        testFiles.append(QString::fromStdString(fileName));
+    }
+
     testListWidget->addItems(testFiles);
 
     // Layout

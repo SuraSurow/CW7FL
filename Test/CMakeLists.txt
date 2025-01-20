@@ -16,8 +16,8 @@ include_directories(${CMAKE_SOURCE_DIR}/../CW7FL)
 # Dodaj pliki źródłowe i nagłówkowe
 add_executable(Tests
         main.cpp
-        Cases/Addition/Addition.cpp
         ../CW7FL/Calculator.cpp
+        Cases/test_Init.h
 )
 
 # Linkuj z bibliotekami

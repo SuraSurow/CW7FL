@@ -17,6 +17,8 @@ set(SOURCES
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+        TestLoader.cpp
+        TestLoader.h
 )
 
 # Tworzenie pliku wykonywalnego
