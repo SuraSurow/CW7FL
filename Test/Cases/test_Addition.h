@@ -5,7 +5,7 @@
 #include <string>
 
 
-#include "CW7FL/Calculator.h"
+#include "../../CW7FL/Calculator.h"
 // Created by bolo on 18.01.25.
 //
 
@@ -22,19 +22,35 @@ public:
 };
 
 
-#define ADDITION_TEST(name, expression, expected) \
+#define ADDITION_TEST_TRUE(name, expression, expected) \
 TEST(AdditionTests, name) {                   \
 Addition addition;                        \
 EXPECT_TRUE(addition.performTest(expression, expected)); \
 }
 
-ADDITION_TEST(AdditionMinusNumberToMinusNumber, "(-23)+(-5)", "-28")
-ADDITION_TEST(AdditionMinusNumberToPlusNumber, "23+(-5)", "18")
-ADDITION_TEST(AdditionPlusNumberToPlusNumber, "23+5", "28")
-ADDITION_TEST(AdditionZeroToMinusNumber, "0+(-5)", "-5")
-ADDITION_TEST(AdditionZeroToPlusNumber, "0+5", "5")
-ADDITION_TEST(AdditionZeroToZero, "0+0", "0")
+
+#define ADDITION_TEST_FALSE(name, expression, expected) \
+TEST(AdditionTests, name) {                   \
+Addition addition;                        \
+EXPECT_FALSE(addition.performTest(expression, expected)); \
+}
 
 
-#endif // ADDITION_H
+ADDITION_TEST_TRUE(AdditionMinusNumberToMinusNumber_ExpectedTrue, "(-23)+(-5)", "-28")
+ADDITION_TEST_TRUE(AdditionMinusNumberToPlusNumber_ExpectedTrue, "23+(-5)", "18")
+ADDITION_TEST_TRUE(AdditionPlusNumberToPlusNumber_ExpectedTrue, "23+5", "28")
+ADDITION_TEST_TRUE(AdditionZeroToMinusNumber_ExpectedTrue, "0+(-5)", "-5")
+ADDITION_TEST_TRUE(AdditionZeroToPlusNumber_ExpectedTrue, "0+5", "5")
+ADDITION_TEST_TRUE(AdditionZeroToZero_ExpectedTrue, "0+0", "0")
+
+
+ADDITION_TEST_FALSE(AdditionMinusNumberToMinusNumber_ExpectedFalse, "(-23)+(-5)", "-27")
+ADDITION_TEST_FALSE(AdditionMinusNumberToPlusNumber_ExpectedFalse, "23+(-5)", "17")
+ADDITION_TEST_FALSE(AdditionPlusNumberToPlusNumber_ExpectedFalse, "23+5", "27")
+ADDITION_TEST_FALSE(AdditionZeroToMinusNumber_ExpectedFalse, "0+(-5)", "5")
+ADDITION_TEST_FALSE(AdditionZeroToPlusNumber_ExpectedFalse, "0+5", "-5")
+ADDITION_TEST_FALSE(AdditionZeroToZero_ExpectedFalse, "0+0", "1")
+
+
+# endif ADDITION_H
 

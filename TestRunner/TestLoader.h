@@ -9,16 +9,25 @@
 
 
 class TestLoader {
+    void scanNameFiles();
+    std::string searchPathByName(std::string& name);
 public:
-    std::vector<std::string>fileAbsolutePaths;
-    TestLoader() = default;
+    std::vector<std::string>filesNamesVector;
+    std::vector<std::string>filesPathsVector;
+
+    TestLoader() {
+        scanNameFiles();
+    }
 
     ~TestLoader();
 
-    void scanNameFiles();
+
 
     std::vector<std::string> getNameFiles() ;
-
+    std::vector<std::string> getPathFiles() ;
+    std::string getPathByName(std::string name) ;
+    void runSelectedGoogleTest(const std::string& pathToFile, const std::string& nameOfTest);
+    void runAllGoogleTest(const std::string& pathToFile) ;
 
 
 };
