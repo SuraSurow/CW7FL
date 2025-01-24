@@ -34,9 +34,21 @@ void Calculator::parser() {
     for (int i = 0; i < init.size(); i++) {
         std::string temp_number;
         std::string str_iter(1, init[i]);
-        if (oper_set.contains(str_iter)) {
+        bool is_negative = false;
+
+        if (str_iter == "-" && i < init.size()-1) {
+            std::string next_char(1, init[i+1]);
+            if (num_sys_set.contains(next_char)) {
+                is_negative = true;
+                i++;
+                str_iter = next_char;
+            }
+        }
+
+        if (oper_set.contains(str_iter) && !is_negative) {
             this->tokenize.push_back(str_iter);
         }
+
         int j = i;
         while (num_sys_set.contains(str_iter) && j<init.size()) {
             str_iter = std::string(1, init[j]);
@@ -44,7 +56,9 @@ void Calculator::parser() {
             j++;
             str_iter = std::string(1, init[j]);
         }
-        if (!temp_number.empty()){
+
+        if (!temp_number.empty()) {
+            if (is_negative) temp_number = "-" + temp_number;
             this->tokenize.push_back(temp_number);
             i=j-1;
         }
@@ -99,6 +113,16 @@ void Calculator::calculate() {
                 throw std::runtime_error("Division by zero");
             }
             result_int /= current;
+        } else if (m_op == "&") { //AND
+            result_int &= current;
+        }else if (m_op == "|") { //OR
+            result_int |= current;
+        }else if (m_op == "^") { //XOR
+            result_int ^= current;
+        }else if (m_op == "!") { //NOT
+            result_int = !current;
+        }else if (m_op == "%") { //MODULO
+            result_int %= current;
         }
         m_op = "";
     }
@@ -107,6 +131,12 @@ void Calculator::calculate() {
 }
 
 void Calculator::return_in_word_size() {
+    /*
+        int64_t - QWORD: -9223372036854775808 do 9223372036854775807
+        int32_t - DWORD: -2147483648 do 2147483647
+        int16_t - WORD: -32768 do 32767
+        int8_t - Bajt: -128 do 127
+     */
     if (word_length == "QWORD") {
         const int64_t res = result_int;
         this->result = std::to_string(res);
@@ -125,5 +155,22 @@ void Calculator::return_in_word_size() {
 }
 
 void Calculator::return_result() {
+    //todo check word size!
     this->result = std::to_string(result_int);
+}
+
+void Calculator::rotate_left() {
+    //auto rotated_left = std::rotl(x, 8);
+}
+
+void Calculator::rotate_right() {
+    //auto rotated_right = std::rotr(x, 8);
+}
+
+void Calculator::shift_left() {
+    //int lsh = x << 2;
+}
+
+void Calculator::shift_right() {
+   // int rsh = x >> 1;
 }
