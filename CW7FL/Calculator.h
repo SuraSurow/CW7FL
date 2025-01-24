@@ -1,7 +1,3 @@
-//
-// Created by bolo on 18.01.25.
-//
-
 #ifndef CALCULATOR_H
 #define CALCULATOR_H
 
@@ -28,7 +24,7 @@ private:
     std::list<std::string> bin_symb = {"0","1"};
     std::list<std::string> operation_symb = {"+","-","*","/","="};
     void parser();
-    void calculate(std::string math_operator);
+    void calculate();
     void return_result();
 };
 
