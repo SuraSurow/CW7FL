@@ -6,7 +6,7 @@
 
 Calculator::Calculator(std::string init) : init(std::move(init)) {
     parser();
-    calculate("");
+    calculate();
 }
 
 void Calculator::parser() {
@@ -51,7 +51,7 @@ void Calculator::parser() {
 
 }
 
-void Calculator::calculate(std::string math_operator) {
+void Calculator::calculate() {
     std::string m_op;
     // Pusta lista , lub tylko operator
     if (mixed_tokens.empty() ||
@@ -75,20 +75,21 @@ void Calculator::calculate(std::string math_operator) {
         int current = std::get<int>(mixed_tokens.front());
         mixed_tokens.pop_front();
 
-        if (math_operator.empty() || math_operator == "+") {
+        if (m_op.empty() || m_op == "+") {
             result_int += current;
-        } else if (math_operator == "-") {
+        } else if (m_op == "-") {
             result_int -= current;
-        } else if (math_operator == "*") {
+        } else if (m_op == "*") {
             result_int *= current;
-        } else if (math_operator == "/") {
+        } else if (m_op == "/") {
             if (current == 0) {
                 throw std::runtime_error("Division by zero");
             }
             result_int /= current;
         }
+        m_op = "";
     }
-    calculate(m_op);
+    calculate();
     return_result();
 }
 
