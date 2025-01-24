@@ -25,10 +25,26 @@ private:
     std::list<std::string> dec_symb = {"0","1","2","3","4","5","6","7","8","9"};
     std::list<std::string> oct_symb = {"0","1","2","3","4","5","6","7"};
     std::list<std::string> bin_symb = {"0","1"};
-    std::list<std::string> operation_symb = {"+","-","*","/","="};
+    std::list<std::string> operation_symb = {"+","-","*","/","=","&","|","^","!","%"};
+    /*
+     * [+] - dodawnie
+     * [-] - odejmowanie
+     * [*] - mnożenie
+     * [/] - dzielenie
+     * [=] - równa się/podaj wynik
+     * [&] - AND
+     * [|] - OR
+     * [^] - XOR
+     * [!] - MOT
+     * [%] - MODULO
+     */
     void parser();
     void calculate();
     void return_result();
+    void rotate_left();
+    void rotate_right();
+    void shift_left();
+    void shift_right();
 };
 
 
