@@ -155,22 +155,21 @@ void Calculator::return_in_word_size() {
 }
 
 void Calculator::return_result() {
-    //todo check word size!
     this->result = std::to_string(result_int);
 }
 
 void Calculator::rotate_left() {
-    //auto rotated_left = std::rotl(x, 8);
+    this->result_int = (this->result_int << 1) | (this->result_int >> (sizeof(this->result_int) * 8 - 1));
 }
 
 void Calculator::rotate_right() {
-    //auto rotated_right = std::rotr(x, 8);
+    this->result_int = (this->result_int >> 1) | (this->result_int << (sizeof(this->result_int) * 8 - 1));
 }
 
 void Calculator::shift_left() {
-    //int lsh = x << 2;
+    this->result_int = this->result_int << 1;
 }
 
 void Calculator::shift_right() {
-   // int rsh = x >> 1;
+   this->result_int = this->result_int >> 1;
 }
