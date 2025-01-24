@@ -11,10 +11,13 @@ class Calculator {
 public:
     explicit Calculator(std::string init);
     std::string init;
+    std::string word_length = "QWORD";
     std::list<std::string> tokenize;
     std::list<std::variant<int, std::string>> mixed_tokens;
     std::string result;
-    int result_int = 0;
+    int64_t result_int = 0;
+    void return_in_base();
+    void return_in_word_size();
 
 private:
     std::string base_system = "DEC";
