@@ -2,22 +2,25 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLineEdit>
+#include <QGridLayout>
+#include <QPushButton>
 
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
-QT_END_NAMESPACE
-
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private:
-    Ui::MainWindow *ui;
+    QLineEdit *display;
+    QWidget *centralWidget;
+    QGridLayout *layout;
+
+    void addButton(const QString &text, int row, int col, int rowSpan = 1, int colSpan = 1);
+    void onButtonClicked(const QString &text);
+    int performLogicalOperation(const QString &operation, int lhs, int rhs);
 };
+
 #endif // MAINWINDOW_H
