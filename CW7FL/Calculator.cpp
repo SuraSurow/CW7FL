@@ -1,5 +1,6 @@
 #include "Calculator.h"
 #include <algorithm>
+#include <format>
 #include <list>
 #include <stdexcept>
 #include <unordered_set>
@@ -9,12 +10,24 @@ Calculator::Calculator(std::string init) : init(std::move(init)) {
     calculate();
 }
 
+void Calculator::return_in_base() {
+    if (base_system == "HEX") {
+        this->result = std::format("{:x}", this->result_int);
+    } else if (base_system == "DEC") {
+        this->result = std::to_string(this->result_int);
+    } else if (base_system == "OCT") {
+        this->result = std::format("{:o}", this->result_int);
+    } else if (base_system == "BIN") {
+        this->result = std::format("{:b}", this->result_int);
+    }
+}
+
 void Calculator::parser() {
     std::list<std::string> num_sym;
     if (base_system == "HEX") {num_sym = hex_symb;}
-    if (base_system == "DEC") {num_sym = dec_symb;}
-    if (base_system == "OCT") {num_sym = oct_symb;}
-    if (base_system == "BIN") {num_sym = bin_symb;}
+    else if (base_system == "DEC") {num_sym = dec_symb;}
+    else if (base_system == "OCT") {num_sym = oct_symb;}
+    else if (base_system == "BIN") {num_sym = bin_symb;}
     std::unordered_set<std::string> num_sys_set(num_sym.begin(), num_sym.end());
     std::unordered_set<std::string> oper_set(operation_symb.begin(), operation_symb.end());
 
@@ -93,7 +106,24 @@ void Calculator::calculate() {
     return_result();
 }
 
+void Calculator::return_in_word_size() {
+    if (word_length == "QWORD") {
+        const int64_t res = result_int;
+        this->result = std::to_string(res);
+    } else if (word_length == "DWORD") {
+        const int32_t res = result_int;
+        this->result = std::to_string(res);
+    } else if (word_length == "WORD") {
+        const int16_t res = result_int;
+        this->result = std::to_string(res);
+    } else if (word_length == "BYTE") {
+        const int8_t res = result_int;
+        this->result = std::to_string(res);
+    } else {
+        throw std::runtime_error("Invalid word length");
+    }
+}
+
 void Calculator::return_result() {
-    //todo check word size!
     this->result = std::to_string(result_int);
 }
