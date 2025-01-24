@@ -114,9 +114,9 @@ void Calculator::calculate() {
             }
             result_int /= current;
         } else if (m_op == "&") { //AND
-            result_int &= current;
+            result_int = result_int&&current;
         }else if (m_op == "|") { //OR
-            result_int |= current;
+            result_int = result_int||current;
         }else if (m_op == "^") { //XOR
             result_int ^= current;
         }else if (m_op == "!") { //NOT
